@@ -1,0 +1,1 @@
+const number=/^[6789][0-9]{9}$/ //regex for number validation of india
