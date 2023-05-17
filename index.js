@@ -6,28 +6,44 @@ let confirmPassword = document.getElementById("password-2");
 
 //function for number
 
+function empty() {
+  if (username.value === "") {
+    document.getElementById("name-error").innerHTML = "Naam to daal bhai!";
+  }
+  if (Usernum.value == null || Usernum.value === "") {
+    document.getElementById("number-error").innerHTML = "Number to daal bhai!";
+  }
+  if (email.value <= 0) {
+    document.getElementById("email-error").innerHTML = "Email Kaun daalega?";
+  }
+  if (password.value <= 7) {
+    document.getElementById("password-error").innerHTML = "Chhota hai brother!";
+  }
+}
+
 function valid() {
   //regex values
   const numercheck = /^[6-9][0-9]{9}$/;
   const usercheck = /^[a-zA-Z]{2,30}$/;
   const passcheck = /^[a-z]{8,10}$/;
   const emailcheck = /^[^ ]+@[a-z]+\.[a-z]{2,6}$/;
-
+  empty();
   //
   if (!usercheck.test(username.value)) {
-    document.getElementById("name-error").innerHTML = "invalid";
+    document.getElementById("name-error").innerHTML = "Invalid Name";
     return false;
   } else if (!numercheck.test(Usernum.value)) {
-    document.getElementById("number-error").innerHTML = "invalid";
+    document.getElementById("number-error").innerHTML = "Invalid Number";
     return false;
   } else if (!emailcheck.test(email.value)) {
-    document.getElementById("email-error").innerHTML = "!!invalid";
+    document.getElementById("email-error").innerHTML = "Invalid Email";
     return false;
   } else if (!passcheck.test(password.value)) {
-    document.getElementById("password-error").innerHTML = "!!invalid";
+    document.getElementById("password-error").innerHTML = "Invalid Password";
     return false;
   } else if (!confirmPassword.value.match(password.value)) {
-    document.getElementById("password-2-error").innerHTML = "doesnt match";
+    document.getElementById("password-2-error").innerHTML =
+      "Password doesnt match";
     return false;
   } else {
     true;

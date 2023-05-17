@@ -22,10 +22,6 @@ body {
 h2 {
   text-align: center;
 }
-
-hr{
-  border: 1px solid green;
-}
 form {
   position: relative;
   background: #ffafbd; /* fallback for old browsers */
