@@ -22,9 +22,12 @@ body {
 h2 {
   text-align: center;
 }
+
+hr{
+  border: 1px solid green;
+}
 form {
   position: relative;
-  top: 2rem;
   background: #ffafbd; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -44,6 +47,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   border-radius: 40px;
+  
 }
 
 .field {
@@ -63,8 +67,9 @@ form {
   border-radius: 10px;
 }
 .error {
-  color: brown;
+  color:rgb(220, 14, 14);
   font-size: 1rem;
+  padding-left: 1rem;
 }
 
 .fa-user {
@@ -99,9 +104,16 @@ form {
   left: 0.6rem;
   font-size: 1rem;
 }
+
+.fa-building-columns{
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
+}
 .btn {
   color: aliceblue;
-  background-color: #b06ab3;
+  background-color:#7b257e ;
   outline: none;
   border: none;
   width: 100px;
@@ -110,6 +122,36 @@ form {
   margin-left: 5rem;
   border-radius: 10px;
   cursor: pointer;
+  transition: .4s ease-in-out;
 }
 
+.btn:hover{
+  background-color: #921b96;
+}
+
+.gender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+select{
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  outline: none;
+  border-radius: 10px;
+  text-indent: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+optgroup{
+  text-align: left;
+  padding-left: 1rem;
+}
 
