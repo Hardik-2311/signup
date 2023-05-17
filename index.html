@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <form action="09" onsubmit="return valid()">
-        <h2>Sign up</h2>
-      <div class="field">
-        <label for="/">Number</label>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f1c1f090b3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form action="" onsubmit="return valid()">
+    <h2><u>Sign up</u></h2>
+    <div class="field">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <span class="error" id="name-error"></span>
+    </div>
+    <div class="field">
+        <i class="fa-sharp fa-solid fa-phone"></i>
         <input type="number" id="number" placeholder="Enter your number" />
         <span class="error" id="number-error"></span>
+    </div>
+    <div class="field">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="text" id="email" placeholder="Enter your Email" />
+        <span class="error" id="email-error"></span>
+    </div>
+    <div class="field">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" id="password" placeholder="Enter your password"  name="current-password"/>
+          <span class="error" id="password-error"></span>
       </div>
-      <input type="submit" class="btn" />
-    </form>
+      <div class="field">
+        <i class="fa-solid fa-lock-open"></i>
+        <input type="password" id="password-2" placeholder="Confirm password" />
+          <span class="error" id="password-2-error"></span>
+      </div>
+    </div>
+    <input type="submit" class="btn" />
+  </form>
 
-    <script src="index.js">
-     
-    </script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>

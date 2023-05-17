@@ -1,48 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: blanchedalmond;
-    width: 100%;
+body {
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+form {
+  position: relative;
+  top: 2rem;
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
 }
 
-form{
-    position: relative;
-    top: 2rem;
-    background-color: aqua;
-    display: fle;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-padding: 1rem;
-    width: 18rem;
-    margin-left: auto;
-    margin-right: auto;
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-label{
-    font-size: 1.1rem;
+.field input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+  border: none;
+  padding-left: 2rem;
+  padding-top: 0.7rem;
+  border-radius: 10px;
+}
+.error {
+  color: brown;
+  font-size: 1rem;
 }
 
-.field{
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.fa-user {
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
+}
+.fa-phone {
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
 }
 
-.field input{
-    width: 100%;
-    padding: .5rem;
-    outline: 0;
-    border: none;
+.fa-lock {
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
+}
+.fa-envelope {
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
 }
 
-.error{
-    color: brown;
-    font-size: 1rem;
+.fa-lock-open {
+  position: relative;
+  top: 1.7rem;
+  left: 0.6rem;
+  font-size: 1rem;
 }
+.btn {
+  color: aliceblue;
+  background-color: #b06ab3;
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin-left: 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
