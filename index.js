@@ -23,8 +23,8 @@ function empty() {
 
 function valid() {
   //regex values
-  const numercheck = /^[6-9][0-9]{9}$/;
-  const usercheck = /^[a-zA-Z]{2,30}$/;
+  const numercheck = /^[6789][0-9]{9}$/;//error
+  const usercheck = /^^[a-zA-Z]+(\s[a-zA-Z]+)?$/;//specified space between the names
   const passcheck = /^[a-z]{8,10}$/;
   const emailcheck = /^[^ ]+@[a-z]+\.[a-z]{2,6}$/;
   empty();
