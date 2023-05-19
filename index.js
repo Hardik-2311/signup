@@ -5,6 +5,18 @@ let email = document.getElementById("email");
 let confirmPassword = document.getElementById("password-2");
 
 //function for number
+password.addEventListener('input',()=>{
+  if(password.value.length >0 && password.value.length<4){
+    document.getElementById("password-error").innerHTML = "password is weak";
+  }
+  else if(password.value.length >=4 && password.value.length<8){
+    document.getElementById("password-error").innerHTML = "password is medium";
+  }
+  else if(password.value.length >=8){
+    document.getElementById("password-error").innerHTML = "password is strong";
+  }
+  
+})
 
 function empty() {
   if (username.value === "") {
